@@ -51,21 +51,41 @@ body {
                 }
             }
         }
+        .endTask {
+            text-decoration: line-through;
+        }
         .items {
             display: flex;
             flex-direction: row;
-            flex-wrap: wrap;
-            [type="checkbox"]{
-                background: none;
-                border: solid 2px #fff ;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #fff;
+            width: 100%;
+            max-width: 600px;
+            height: 60px;
+            margin-left: 60%;
+            margin-right: 60%;
+            .item {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                width: 100%;
+                height: auto;
+                .btn {
+                    border: solid 2px rgb(246, 8, 8);
+                    box-shadow: 2px 2px rgb(246, 8, 8);
+                    border-radius: 6px;
+                    padding: 6px 18px 6px 18px;
+                    color:rgb(246, 8, 8);
+                    background: none;
+                    transition: ease-in-out 0.5px;
+                    &:hover {
+                        background-color: rgb(246, 8, 8);
+                        color: #fff;
+                    }
+                }
             }
         }
     }
 
-}
-
-
-
-.endTask {
-    text-decoration: line-through;
 }

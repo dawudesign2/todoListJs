@@ -12,11 +12,15 @@ const Todo = () => {
     });
 
     const addTask = (str) => {
-        const todo = {
-            str,
-            id : Date.now()
+        if(!str){
+            alert('add a task please !');
+        } else {
+            const todo = {
+                str,
+                id : Date.now()
+            }
+            showList(todo);
         }
-        showList(todo);
     }
 
     const showList = (todo) => {

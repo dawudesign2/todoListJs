@@ -50,18 +50,40 @@ body {
   box-shadow: 2px 2px rgb(246, 8, 8);
   color: rgb(246, 8, 8);
 }
+.main .container .endTask {
+  text-decoration: line-through;
+}
 .main .container .items {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #fff;
+  width: 100%;
+  max-width: 600px;
+  height: 60px;
+  margin-left: 60%;
+  margin-right: 60%;
 }
-.main .container .items [type=checkbox] {
+.main .container .items .item {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+.main .container .items .item .btn {
+  border: solid 2px rgb(246, 8, 8);
+  box-shadow: 2px 2px rgb(246, 8, 8);
+  border-radius: 6px;
+  padding: 6px 18px 6px 18px;
+  color: rgb(246, 8, 8);
   background: none;
-  border: solid 2px #fff;
+  transition: ease-in-out 0.5px;
 }
-
-.endTask {
-  text-decoration: line-through;
+.main .container .items .item .btn:hover {
+  background-color: rgb(246, 8, 8);
+  color: #fff;
 }
 
 /*# sourceMappingURL=app.css.map */

@@ -1,3 +1,65 @@
+body {
+  background-color: #333;
+}
+
+.main .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main .container h1 {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+.main .container form {
+  display: flex;
+  flex-direction: column;
+  margin: 21px;
+}
+.main .container form label {
+  font-size: 18px;
+  font-weight: 300;
+  color: #fff;
+  margin: 12px;
+}
+.main .container form input {
+  background: none;
+  border: none;
+  border-bottom: solid 2px #fff;
+  margin-bottom: 18px;
+  color: #fff;
+}
+.main .container form input:focus {
+  outline: none;
+  border-bottom: solid 2px rgb(246, 8, 8);
+}
+.main .container form button {
+  background: none;
+  border: solid 2px #fff;
+  border-radius: 12px;
+  box-shadow: 2px 2px #fff;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: ease-in-out 0.5;
+}
+.main .container form button:hover {
+  border: solid 2px rgb(246, 8, 8);
+  box-shadow: 2px 2px rgb(246, 8, 8);
+  color: rgb(246, 8, 8);
+}
+.main .container .items {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.main .container .items [type=checkbox] {
+  background: none;
+  border: solid 2px #fff;
+}
+
 .endTask {
   text-decoration: line-through;
 }

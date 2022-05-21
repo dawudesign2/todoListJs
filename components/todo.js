@@ -50,8 +50,13 @@ const Todo = () => {
         e.target.parentNode.classList.toggle('endTask');
     }
 
-    const deleteTask = (e) => {
-
+    const deleteTask = e => {
+        console.log(e);
+        allTask.forEach(el => {
+            if(e.target.parentNode.parentNode.getAttribute('data-key') === el.getAttribute('data-key')){
+                el.remove();
+            }
+        });
     }
 }
 
